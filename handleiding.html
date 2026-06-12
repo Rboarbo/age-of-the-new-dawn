@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handleiding — Age of the New Dawn</title>
+<style>
+  :root{
+    --parchment:#efe4c8; --parchment2:#dccfa8; --ink:#3a2c1a; --gold:#c9a227;
+    --blood:#8a2c1d; --moss:#4a6b35; --line:#6e5230;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:#1a2410 radial-gradient(ellipse at 50% 0%, #2c3f1e, #141c0c);
+    font-family:Georgia,'Times New Roman',serif;color:var(--ink);
+    padding:40px 16px 80px;line-height:1.65;
+  }
+  .scroll{
+    max-width:880px;margin:0 auto;background:linear-gradient(170deg,var(--parchment),var(--parchment2));
+    border:3px solid var(--line);border-radius:12px;padding:48px 56px;
+    box-shadow:0 24px 70px rgba(0,0,0,.7), inset 0 0 70px rgba(110,82,48,.22);
+  }
+  @media(max-width:640px){ .scroll{padding:28px 22px} }
+  header{text-align:center;margin-bottom:34px}
+  h1{font-size:38px;letter-spacing:3px;color:var(--ink)}
+  h1 span{color:var(--blood)}
+  .tag{font-style:italic;color:var(--line);margin-top:4px;font-size:16px}
+  .divider{border:none;border-top:2px solid rgba(110,82,48,.4);margin:36px auto;width:60%;position:relative}
+  .divider::after{content:'⚜';position:absolute;left:50%;top:-13px;transform:translateX(-50%);
+    background:var(--parchment);padding:0 12px;color:var(--gold);font-size:16px}
+  h2{font-size:23px;color:var(--blood);letter-spacing:1px;margin:34px 0 12px;border-bottom:1.5px solid rgba(110,82,48,.35);padding-bottom:5px}
+  h3{font-size:17px;color:var(--ink);margin:20px 0 6px}
+  p{margin-bottom:12px;font-size:15.5px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14.5px}
+  th{background:rgba(110,82,48,.18);text-align:left;padding:8px 12px;border:1px solid rgba(110,82,48,.4);
+    color:var(--blood);letter-spacing:.5px;font-size:13.5px}
+  td{padding:8px 12px;border:1px solid rgba(110,82,48,.35);vertical-align:top}
+  tr:nth-child(even) td{background:rgba(110,82,48,.06)}
+  kbd{background:#cdbd96;border:1px solid #8a6a3a;border-bottom-width:2.5px;border-radius:4px;
+    padding:1px 7px;font-size:13px;font-family:inherit;white-space:nowrap}
+  .tip{
+    background:rgba(74,107,53,.12);border-left:4px solid var(--moss);
+    padding:10px 16px;margin:14px 0;border-radius:0 6px 6px 0;font-size:14.5px;
+  }
+  .warn{
+    background:rgba(138,44,29,.10);border-left:4px solid var(--blood);
+    padding:10px 16px;margin:14px 0;border-radius:0 6px 6px 0;font-size:14.5px;
+  }
+  .unit-dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;
+    vertical-align:-1px;border:1px solid rgba(0,0,0,.3)}
+  ul{margin:0 0 14px 22px}
+  li{margin-bottom:6px;font-size:15px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:8px 28px}
+  @media(max-width:640px){ .cols{grid-template-columns:1fr} }
+  footer{text-align:center;margin-top:40px;color:var(--line);font-style:italic;font-size:13.5px}
+  a{color:var(--blood)}
+</style>
+</head>
+<body>
+<div class="scroll">
+
+<header>
+  <h1>AGE OF THE <span>NEW DAWN</span></h1>
+  <div class="tag">— Spelershandleiding · Verken. Bouw. Verover. —</div>
+</header>
+
+<h2>🎯 Doel van het spel</h2>
+<p>Je begint met een <b>dorpscentrum</b> en drie dorpelingen in een wereld die grotendeels schuilgaat in duisternis. Ergens op de kaart ligt een <b>vijandelijk krijgskamp</b> 🏴 dat elke ~90 seconden golven plunderaars op je dorp afstuurt — en elke golf is sterker dan de vorige.</p>
+<p><b>Je wint</b> door het krijgskamp te vinden en de grote hoofdtent te vernietigen.<br>
+<b>Je verliest</b> wanneer je dorpscentrum valt.</p>
+
+<hr class="divider">
+
+<h2>⚡ Snelstart — je eerste twee minuten</h2>
+<ul>
+  <li><b>1.</b> Je dorpelingen zijn al geselecteerd. <b>Rechtsklik</b> op de bessenstruiken naast je dorp — ze beginnen voedsel te plukken en brengen het naar het dorpscentrum.</li>
+  <li><b>2.</b> Klik je <b>dorpscentrum</b> aan en train extra dorpelingen (50 🍖 per stuk). Een sterke economie wint het spel.</li>
+  <li><b>3.</b> Zet nieuwe dorpelingen op <b>hout</b> (rechtsklik op bomen) — hout heb je nodig voor vrijwel elk gebouw.</li>
+  <li><b>4.</b> Bouw een <b>huis</b> 🏠 zodra je richting je bevolkingslimiet groeit, en een <b>kazerne</b> ⚔ vóór de eerste golf (na ~80 seconden!).</li>
+  <li><b>5.</b> Train een paar <b>soldaten</b> en overleef golf 1. Daarna: uitbouwen, ommuren en op verkenning.</li>
+</ul>
+<div class="warn"><b>⏰ Let op:</b> de eerste vijandelijke golf komt al na ~80 seconden. Zorg dat er dan minstens 2–3 soldaten of een wachttoren staan.</div>
+
+<hr class="divider">
+
+<h2>🖱️ Besturing</h2>
+<table>
+  <tr><th>Actie</th><th>Hoe</th></tr>
+  <tr><td>Units selecteren</td><td>Linksklik op een unit, of <b>sleep een kader</b> om meerdere units</td></tr>
+  <tr><td>Beveel geven</td><td><b>Rechtermuisknop</b>: lopen (grond), verzamelen (boom/bes/goud/boerderij), bouwen (bouwplaats), aanvallen (vijand)</td></tr>
+  <tr><td>Camera bewegen</td><td><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>, pijltjestoetsen of muis tegen de schermrand · middelste muisknop slepen</td></tr>
+  <tr><td>Zoomen</td><td>Scrollwiel</td></tr>
+  <tr><td>Minimap</td><td>Klik op de minimap (linksonder) om de camera direct te verplaatsen</td></tr>
+  <tr><td>Groep opslaan</td><td><kbd>Ctrl</kbd> + <kbd>1</kbd>–<kbd>5</kbd> slaat je huidige selectie op</td></tr>
+  <tr><td>Groep oproepen</td><td><kbd>1</kbd>–<kbd>5</kbd> selecteert de opgeslagen groep direct</td></tr>
+  <tr><td>Naar dorpscentrum</td><td><kbd>H</kbd> springt met de camera naar je basis</td></tr>
+  <tr><td>Pauze / menu</td><td><kbd>P</kbd> of de ⏸-knop rechtsboven — hervatten, opnieuw beginnen of stoppen</td></tr>
+  <tr><td>Annuleren</td><td><kbd>Esc</kbd> annuleert bouwplaatsing of deselecteert · geluid aan/uit via 🔊</td></tr>
+</table>
+
+<hr class="divider">
+
+<h2>🪵 Grondstoffen</h2>
+<table>
+  <tr><th>Grondstof</th><th>Bron</th><th>Vooral nodig voor</th></tr>
+  <tr><td>🪵 <b>Hout</b></td><td>Bomen (120 per boom)</td><td>Alle gebouwen, muren, poorten, boogschutters</td></tr>
+  <tr><td>🍖 <b>Voedsel</b></td><td>Bessenstruiken (160) en boerderijen (400)</td><td>Units trainen, upgrades</td></tr>
+  <tr><td>🪙 <b>Goud</b></td><td>Goudaders (600)</td><td>Soldaten, wachttorens, upgrades</td></tr>
+</table>
+<p>Dorpelingen dragen maximaal 10 tegelijk en brengen hun lading naar het dorpscentrum. Ze werken zelfstandig door tot de bron op is en zoeken dan automatisch de dichtstbijzijnde bron van hetzelfde type.</p>
+<div class="tip"><b>💡 Tip:</b> bessen bij je startlocatie raken op. Bouw op tijd boerderijen — die leveren 400 voedsel per stuk en staan veilig binnen je muren. Een dorpeling die een boerderij afbouwt, gaat er automatisch op werken.</div>
+
+<hr class="divider">
+
+<h2>🏗️ Gebouwen</h2>
+<table>
+  <tr><th>Gebouw</th><th>Kosten</th><th>Functie</th></tr>
+  <tr><td>🏛 <b>Dorpscentrum</b></td><td>(start)</td><td>Traint dorpelingen · afleverpunt grondstoffen · +10 bevolking · <b>verlies = game over</b></td></tr>
+  <tr><td>🏠 <b>Huis</b></td><td>50 🪵</td><td>+5 bevolkingslimiet (max. 60 totaal)</td></tr>
+  <tr><td>🌾 <b>Boerderij</b></td><td>60 🪵</td><td>400 voedsel; herbouwen wanneer uitgeput</td></tr>
+  <tr><td>⚔ <b>Kazerne</b></td><td>125 🪵</td><td>Traint soldaten en boogschutters · onderzoekt upgrades</td></tr>
+  <tr><td>🏹 <b>Wachttoren</b></td><td>100 🪵 + 25 🪙</td><td>Schiet automatisch pijlen op vijanden (bereik 17, schade 11)</td></tr>
+  <tr><td>🪵 <b>Palissademuur</b></td><td>10 🪵 per segment</td><td>Houdt vijanden tegen — zij moeten zich er doorheen slaan</td></tr>
+  <tr><td>🚪 <b>Poort</b></td><td>30 🪵</td><td>Opent automatisch voor je eigen volk, blijft dicht voor vijanden</td></tr>
+</table>
+<h3>Bouwen</h3>
+<p>Selecteer een dorpeling en kies een gebouw in het paneel onderin. Een <b>groene</b> schaduw betekent: hier kan het; <b>rood</b> betekent: te dicht bij iets anders of onverkend terrein. <b>Muren plaats je als lijn:</b> klik het startpunt, sleep, en klik het eindpunt — alle segmenten worden in één keer neergezet. Dorpelingen werken na een voltooide bouwplaats automatisch door aan de volgende in de buurt.</p>
+<div class="tip"><b>💡 Tip:</b> plaats een poort vlak bij een muurlijn — hij draait dan automatisch in dezelfde richting en sluit netjes aan.</div>
+
+<hr class="divider">
+
+<h2>⚔️ Units</h2>
+<table>
+  <tr><th>Unit</th><th>Kosten · tijd</th><th>Rol</th></tr>
+  <tr><td><span class="unit-dot" style="background:#b08a48"></span><b>Dorpeling</b> (bruin)</td><td>50 🍖 · 16s</td><td>Verzamelt grondstoffen en bouwt. Zwak in gevecht — houd ze achter de linies</td></tr>
+  <tr><td><span class="unit-dot" style="background:#3a5a8a"></span><b>Soldaat</b> (blauw)</td><td>60 🍖 + 25 🪙 · 18s</td><td>Stevige melee-vechter (95 HP, schade 13). Je frontlinie</td></tr>
+  <tr><td><span class="unit-dot" style="background:#3f6b3a"></span><b>Boogschutter</b> (groen)</td><td>40 🍖 + 40 🪵 · 17s</td><td>Afstandsschade (bereik 11), maar kwetsbaar (60 HP). Achter soldaten of muren</td></tr>
+  <tr><td><span class="unit-dot" style="background:#8a2c1d"></span><b>Plunderaar</b> (rood)</td><td>vijand</td><td>Melee-aanvaller; wordt sterker per golf</td></tr>
+  <tr><td><span class="unit-dot" style="background:#b85c1e"></span><b>Vijandelijke schutter</b> (oranje)</td><td>vijand, vanaf golf 3</td><td>Schiet over je muren heen — schakel ze als eerste uit!</td></tr>
+</table>
+<p>Soldaten en boogschutters vallen vijanden in de buurt automatisch aan. Een gericht doelwit kies je met rechtsklik op de vijand.</p>
+
+<h3>Upgrades (via de kazerne)</h3>
+<table>
+  <tr><th>Onderzoek</th><th>Effect</th><th>Niveaus (kosten 🍖/🪙)</th></tr>
+  <tr><td>⚔ <b>Wapensmeedkunst</b></td><td>+3 schade per niveau (soldaten én schutters)</td><td>I: 100/60 · II: 180/100 · III: 280/160</td></tr>
+  <tr><td>🛡 <b>Pantserwerk</b></td><td>+2 schadereductie per niveau</td><td>I: 80/80 · II: 160/130 · III: 260/190</td></tr>
+</table>
+
+<hr class="divider">
+
+<h2>🌑 Fog of war &amp; verkennen</h2>
+<p>De kaart kent drie staten: <b>onontdekt</b> (zwart), <b>verkend</b> (schemering — terrein en vijandelijke gebouwen blijven zichtbaar) en <b>actief zicht</b> (helder). Vijandelijke units zie je alleen binnen het zichtbereik van je eigen units en gebouwen. Het krijgskamp ligt in een van de vier hoeken van de kaart — stuur vroeg een snelle verkenner (een boogschutter of zelfs een dorpeling) langs de randen om hem te vinden. Bouwen kan alleen op verkend terrein.</p>
+
+<hr class="divider">
+
+<h2>🏴 De golven &amp; het krijgskamp</h2>
+<ul>
+  <li>De eerste golf komt na <b>~80 seconden</b>, daarna elke <b>~90 seconden</b> — de timer rechtsboven telt af.</li>
+  <li>Elke golf is groter en sterker; vanaf <b>golf 3</b> marcheren er ook vijandelijke schutters mee.</li>
+  <li>Golven vertrekken altijd <b>vanuit het krijgskamp</b> — zodra je weet waar het ligt, weet je uit welke richting de aanval komt.</li>
+  <li>Het kamp zelf wordt verdedigd door <b>twee vijandelijke wachttorens</b> en een <b>garnizoen van vier plunderaars</b>. De hoofdtent heeft 1800 HP.</li>
+  <li>Vernietig de hoofdtent en de golven stoppen — <b>jij hebt gewonnen</b>.</li>
+</ul>
+
+<hr class="divider">
+
+<h2>🧠 Strategietips</h2>
+<div class="cols">
+<ul>
+  <li><b>Economie eerst.</b> Streef snel naar 8–10 dorpelingen; meer inkomen verslaat alles.</li>
+  <li><b>Muur + poort + toren</b> aan de kant van het krijgskamp = een killzone die golven vrijwel zelfstandig opvangt.</li>
+  <li><b>Mix je leger:</b> soldaten vangen klappen op, boogschutters erachter doen de schade.</li>
+  <li><b>Groepen:</b> leg je leger vast op <kbd>Ctrl</kbd>+<kbd>1</kbd> en je verkenner op <kbd>Ctrl</kbd>+<kbd>2</kbd>.</li>
+</ul>
+<ul>
+  <li><b>Upgrade vóór je aanvalt.</b> Wapens II + Pantser II maakt je leger bijna dubbel zo effectief tegen het kamp.</li>
+  <li><b>Val aan ná een golf:</b> dan is de verdediging van het kamp minimaal en heb je ~80 seconden de tijd.</li>
+  <li><b>Richt eerst op de vijandelijke torens</b>, daarna de hoofdtent.</li>
+  <li><b>Verlies je units, niet je dorp:</b> trek terug achter je muren als het misgaat — units zijn herbouwbaar, je dorpscentrum niet.</li>
+</ul>
+</div>
+
+<hr class="divider">
+
+<h2>❓ Veelgestelde vragen</h2>
+<p><b>Mijn dorpelingen doen niets meer.</b> De bron is waarschijnlijk op. Geef een nieuwe rechtsklik-opdracht, of bouw boerderijen voor doorlopend voedsel.</p>
+<p><b>Ik kan geen units meer trainen ("Bevolkingslimiet bereikt").</b> Bouw huizen — elk huis geeft +5 bevolkingsruimte, tot een maximum van 60.</p>
+<p><b>Ik kan ergens niet bouwen.</b> De plek is te dicht bij een ander gebouw of een grondstof, of het terrein is nog niet verkend (zwart op de kaart).</p>
+<p><b>Vijanden schieten over mijn muur.</b> Dat zijn de oranje schutters (vanaf golf 3). Beantwoord ze met eigen boogschutters of een wachttoren achter de muur.</p>
+<p><b>Het spel is gepauzeerd / ik wil opnieuw.</b> Druk op <kbd>P</kbd> voor het menu: hervatten, opnieuw beginnen of stoppen.</p>
+<p><b>Geen geluid?</b> Klik op 🔊 rechtsboven, en controleer of je browser-tabblad niet gedempt is.</p>
+
+<footer>⚜ Age of the New Dawn · Eén bestand, volledig offline speelbaar · Veel succes, heer van het nieuwe tijdperk ⚜</footer>
+
+</div>
+</body>
+</html>
